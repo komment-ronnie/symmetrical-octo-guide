@@ -1,0 +1,68 @@
+[
+  {
+    "name": "source.java",
+    "path": "source.java",
+    "content": {
+      "structured": {
+        "description": "A `PageInfo` class that represents information about a page of data. It has several constructors that allow it to be created with various pieces of information, such as the current page number, page size, total pages, and total elements. The `of()` method creates a new `PageInfo` instance based on a provided `Pageable` object and a `Page<?>` instance.",
+        "items": [
+          {
+            "id": "cac498a5-52c3-9aa5-eb42-f7389fb84da9",
+            "ancestors": [],
+            "type": "function",
+            "description": "is a data structure used to represent pagination information, including the current page, page limit, total pages, and total elements. The class provides a convenient way to create instances of PageInfo from Pageable objects and their corresponding pages.",
+            "name": "PageInfo",
+            "location": {
+              "start": 10,
+              "insert": 10,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "class",
+            "length": 18,
+            "docLength": null
+          },
+          {
+            "id": "89149721-8c98-1382-7d4e-e671ae57da22",
+            "ancestors": [
+              "cac498a5-52c3-9aa5-eb42-f7389fb84da9"
+            ],
+            "type": "function",
+            "description": "converts a `Pageable` object and a `Page` object into a `PageInfo` object, providing information about the page number, size, total pages, and total elements.",
+            "params": [
+              {
+                "name": "pageable",
+                "type_name": "Pageable",
+                "description": "pagination state for the page being processed, providing the current page number, page size, total pages, and total elements.\n\n* `getPageNumber()` returns the page number of the current page being processed.\n* `getPageSize()` returns the size of each page in the result set.\n* `getTotalPages()` returns the total number of pages in the result set.\n* `getTotalElements()` returns the total number of elements in the result set.",
+                "complex_type": true
+              },
+              {
+                "name": "page",
+                "type_name": "Page<?>",
+                "description": "current page being processed, providing information on its position, size, total pages, and total elements in the PageInfo object returned by the function.\n\n1. PageNumber - The number of the page being processed.\n2. PageSize - The number of elements in each page.\n3. TotalPages - The total number of pages in the result set.\n4. TotalElements - The total number of elements in the result set.",
+                "complex_type": true
+              }
+            ],
+            "returns": {
+              "type_name": "PageInfo",
+              "description": "a `PageInfo` object containing information about the page number, size, total pages, and total elements of a `Pageable` instance.\n\n* `pageNumber`: The number of the current page being displayed.\n* `pageSize`: The number of elements in each page of the result set.\n* `totalPages`: The total number of pages in the result set.\n* `totalElements`: The total number of elements in the result set.",
+              "complex_type": true
+            },
+            "name": "of",
+            "location": {
+              "start": 19,
+              "insert": 19,
+              "offset": " ",
+              "indent": 4,
+              "comment": null
+            },
+            "item_type": "method",
+            "length": 8,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  }
+]
